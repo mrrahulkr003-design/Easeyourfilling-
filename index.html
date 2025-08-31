@@ -184,15 +184,17 @@
     <!-- Contact Form Section -->
     <section id="contact-form">
         <h2>Contact Us</h2>
-        <form action="https://formsubmit.co/007rksahani@gmail.com" method="POST">
-            <!-- Disable Captcha -->
-            <input type="hidden" name="_captcha" value="false">
-            
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+<form action="https://formsubmit.co/007rksahani@gmail.com" method="POST">
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Redirect to thank-you page -->
+    <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+    <button type="submit">Send Message</button>
+</form>
     </section>
 
     <!-- Footer -->
