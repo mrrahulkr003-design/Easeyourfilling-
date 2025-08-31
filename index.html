@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EaseYourFiling - Professional CS Services</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="EaseYourFiling provides professional Company Secretary services, GST filing, annual compliance, and legal advisory for businesses and startups.">
+    <meta name="keywords" content="EaseYourFiling, CS services, Company Registration, GST Filing, Annual Compliance, Legal Advisory, Corporate Services">
+    <meta name="author" content="EaseYourFiling">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="EaseYourFiling - Professional CS Services">
+    <meta property="og:description" content="EaseYourFiling provides professional Company Secretary services, GST filing, annual compliance, and legal advisory for businesses and startups.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EaseYourFiling - Professional CS Services">
+    <meta name="twitter:description" content="EaseYourFiling provides professional Company Secretary services, GST filing, annual compliance, and legal advisory for businesses and startups.">
+    <meta name="twitter:image" content="https://yourwebsite.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Google Fonts: Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
@@ -108,42 +130,6 @@
             background: #003366;
         }
 
-        /* Thank You Modal */
-        #thankYouModal {
-            display:none;
-            position:fixed;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background:rgba(0,0,0,0.6);
-            justify-content:center;
-            align-items:center;
-        }
-
-        #thankYouModal .modal-content {
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            text-align:center;
-            max-width:400px;
-            width:90%;
-        }
-
-        #thankYouModal button {
-            padding:10px 20px;
-            background:#004080;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-            margin-top:20px;
-        }
-
-        #thankYouModal button:hover {
-            background:#003366;
-        }
-
         footer {
             background-color: #004080;
             color: white;
@@ -198,11 +184,10 @@
     <!-- Contact Form Section -->
     <section id="contact-form">
         <h2>Contact Us</h2>
-        <form id="contactForm" action="https://formsubmit.co/007rksahani@gmail.com" method="POST" onsubmit="return showThankYou()">
+        <form action="https://formsubmit.co/007rksahani@gmail.com" method="POST">
             <!-- Disable Captcha -->
             <input type="hidden" name="_captcha" value="false">
             
-            <!-- Form fields -->
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
@@ -210,45 +195,11 @@
         </form>
     </section>
 
-    <!-- Thank You Modal -->
-    <div id="thankYouModal">
-        <div class="modal-content">
-            <h2>Thank You!</h2>
-            <p>Your message has been sent successfully. We will contact you soon.</p>
-            <button id="closeModal">Close</button>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 EaseYourFiling. All Rights Reserved.</p>
         <p>Email: info@easeyourfiling.com | Phone: +91-7004707281</p>
     </footer>
-
-    <script>
-        const modal = document.getElementById('thankYouModal');
-        const closeModal = document.getElementById('closeModal');
-
-        function showThankYou() {
-            // Show modal
-            modal.style.display = "flex";
-            // Clear form fields
-            document.getElementById('contactForm').reset();
-            // Prevent default form submission reload
-            return false;
-        }
-
-        closeModal.addEventListener('click', function() {
-            modal.style.display = "none";
-        });
-
-        // Close modal when clicking outside
-        window.addEventListener('click', function(e) {
-            if(e.target === modal){
-                modal.style.display = "none";
-            }
-        });
-    </script>
 
 </body>
 </html>
